@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books page</title>
+    <style>
+
+*{
+    margin-top: 0.1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background:#002366;
+    border-radius: 10px;
+    z-index: 2;
+    position: fixed;
+    z-index: 100;
+}
+.nav nav ul li{
+    display: inline-block;
+}
+nav{
+    position: absolute;
+    left:25%;
+}
+.nav nav ul li a{
+    margin-left: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color:#ff6611;
+    text-decoration: solid;
+}
+nav ul li a:active{
+    background-color: white;
+}
+nav img{
+   position: fixed;
+   left: 4%;
+   top: 2%;
+    height: 40px;
+    width: 200px;
+}
+        
+
+        .main1{
+            height: 800px;
+            width: 100%;
+            background-image: url(books.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .main1 h1{
+            font-size: 100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            z-index: 10;
+            color: white;
+            position: absolute;
+            top: -100px;
+            left: 43%;
+            animation: book 2s forwards;
+            border-bottom: 5px solid white;
+
+        }
+        @keyframes book{
+            100%{
+                transform: translateY(200px);
+            }
+        }
+        
+        .main1 h3{
+            position: absolute;
+            left: 30%;
+            top: 250px;
+            color: white;
+            font-size: 50px;
+        }
+
+        .st{
+            height: 600px;
+            width: 100%;
+            background-color: lightgray;
+            position: absolute;
+            top: 900px;
+        }
+
+        .SEM1{
+            height: 450px;
+            width: 46%;
+            margin-left: 2%;
+            margin-top: 50px;
+            background-color: #ff6611;
+        }
+
+        .SEM1 ul{
+            padding: 50px;
+        }
+        .SEM1 ul li{
+            background-color: red;
+            width: 570px;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            list-style: none;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+        }
+        .EM1drp{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 360px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .EM1drp a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .EM1drp a:hover{
+            background-color: #ff6611;
+        }
+
+        .st .SEM1 ul li:hover{
+            background-color: #002366;
+        }
+
+
+        .st .SEM1 ul li:hover .EM1drp{ 
+            display: block; 
+         } 
+
+        /* .st .SEM1:hover .EM1drp{
+            display: block;
+        } */
+
+        .EM1:hover~.EM1drp{
+            position: absolute;
+            left: 10%;
+            display: block;
+            z-index: 1;
+        }
+
+
+
+
+
+        .SEM2{
+            height: 450px;
+            width: 46%;
+            margin-left: 52%;
+            margin-top: -450px;
+            background-color: #ff6611;
+        }
+
+        .SEM2 ul{
+        padding: 50px;
+        }
+
+        .SEM2 ul li{
+            background-color: red;
+            width: 570px;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            list-style: none;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Tim';
+            position: relative;
+
+        }
+        .EM2drp{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 360px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .EM2drp a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .EM2drp a:hover{
+            background-color: #ff6611;
+        }
+        .st .SEM2 ul li:hover{
+            background-color: #002366;
+        }
+/* .st .SEM1 ul li:hover .EM1drp{ */
+    /* display: block; */
+/* } */
+        .st .SEM2:hover .EM2drp{
+            display: block;
+        }
+
+
+
+        .nd{
+            height: 600px;
+            width: 100%;
+            background-color: lightgray;
+            position: absolute;
+            top: 1600px;
+        }
+
+        .SEM3{
+            height: 450px;
+            width: 46%;
+            margin-left: 2%;
+            margin-top: 50px;
+            background-color: #ff6611;
+        }
+
+        .SEM3 ul{
+            padding: 50px;
+        }
+        .SEM3 ul li{
+            background-color: red;
+            width: 570px;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            list-style: none;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+            position: relative;
+        }
+        .EM2drp{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 360px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .EM2drp a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .EM2drp a:hover{
+            background-color: #ff6611;
+        }
+
+        .nd .SEM3 ul li:hover{
+            background-color: #002366;
+        }
+
+
+        /* .st .SEM1 ul li:hover .EM1drp{ */
+            /* display: block; */
+        /* } */
+
+        .nd .SEM3:hover .EM2drp{
+            display: block;
+        }
+
+
+
+
+        .SEM4{
+            height: 450px;
+            width: 46%;
+            margin-left: 52%;
+            margin-top: -450px;
+            background-color: #ff6611;
+        }
+
+        .SEM4 ul{
+        padding: 50px;
+        }
+
+        .SEM4 ul li{
+            background-color: red;
+            width: 570px;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            list-style: none;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Tim';
+            position: relative;
+
+        }
+        .EM2drp{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 360px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .EM2drp a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .EM2drp a:hover{
+            background-color: #ff6611;
+        }
+        .nd .SEM4 ul li:hover{
+            background-color: #002366;
+        }
+/* .st .SEM1 ul li:hover .EM1drp{ */
+    /* display: block; */
+/* } */
+        .nd .SEM4:hover .EM2drp{
+            display: block;
+        }
+
+
+    
+        
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <img src="logo.png">
+                <li id="li1"><a href="Home page.html">Home page</a></li>
+                <li id="li2"><a href="Events page.html">Events</a></li>
+                <li id="li7"><a href="Committee page.html">Committee page</a></li>
+                <li id="li3"><a href="Question papers page.html">MU Question papers</a></li>
+                <li id="li4"><a href="Question paper page2.html">RGIT UT Question papers</a></li>
+                <li id="li5"><a href="assignment page.html">Assignments</a></li>
+                <li id="li6"><a href="About us.html">About us</a></li>
+                <li id="li8"><a href="Contact us.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main1">
+        <h1>BOOKS</h1>
+        <h3>ALL YOU NEED WE HAVE IT.</h3>
+    </div>
+    <div class="st">
+        <h1 style="text-align: center; color: white;"> 1st Year</h1>
+        <div class="SEM1">
+            <ul>
+                <li class="EM1">EM-1</li>
+                    <div class="EM1drp">
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                    </div>
+                <li class="EC1">EC-1</li>
+                    <div class="EM1drp"> 
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a> 
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                    </div>
+                <li>EP-1</li>
+                    <!-- <div class="EM1drp"> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                    <!-- </div> -->
+                <li>BEE</li>
+                    <!-- <div class="EM1drp"> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                    <!-- </div> -->
+                <li>EM</li>
+                    <!-- <div class="EM1drp"> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                    <!-- </div> -->
+                <li>workshop</li>
+                <a href="#">manual</a>
+            </ul>
+            
+        </div>
+
+        <div class="SEM2">
+            <ul>
+                <li>EM-1</li>
+                    <div class="EM2drp">
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                        <a href="#">RD sharma</a>
+                    </div>
+                <li>EC-1</li>
+                    <!-- <div class="EM1drp"> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                    <!-- </div> -->
+                <li>EP-1</li>
+                    <!-- <div class="EM1drp"> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                        <!-- <a href="#">RD sharma</a> -->
+                    <!-- </div> -->
+                <li>BEE</li>
+                <li>EM</li>
+                <li>workshop</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="nd">
+        <h1 style="text-align: center; color: white;"> 2nd Year</h1>
+        <div class="SEM3">
+            <ul>
+                <li>EM-1</li>
+                <div class="EM2drp">
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                </div>
+                <li>EC-1</li>
+                <li>EP-1</li>
+                <li>BEE</li>
+                <li>EM</li>
+            </ul>
+        </div>
+
+        <div class="SEM4">
+            <ul>
+                <li>EM-1</li>
+                <div class="EM2drp">
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                    <a href="#">RD sharma</a>
+                </div>
+                <li>EC-1</li>
+                <li>EP-1</li>
+                <li>BEE</li>
+                <li>EM</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="rd">
+        <div class="SEM5">
+            
+        </div>
+
+        <div class="SEM6">
+
+        </div>
+    </div>
+
+
+    <div class="th">
+        <div class="SEM7">
+            
+        </div>
+
+        <div class="SEM8">
+
+        </div>
+    </div>
+    
+</body>
+</html>

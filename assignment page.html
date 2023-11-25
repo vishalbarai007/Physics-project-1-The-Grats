@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments and manuals</title>
+    <style>
+        *{
+           margin-top: 0.1%;
+           margin-left: 0%;
+           margin-right: 0%;
+           padding: 0%;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       .nav{
+           height: 60px;
+           width: 100%;
+           background:#002366;
+           border-radius: 10px;
+           z-index: 2;
+           position: fixed;
+           z-index: 100;
+       }
+       .nav nav ul li{
+           display: inline-block;
+       }
+       nav{
+           position: absolute;
+           left:25%;
+       }
+       .nav nav ul li a{
+           margin-left: 20px;
+           line-height: 50px;
+           text-decoration: none;
+           color: white;
+       }
+       nav ul li a:hover{
+           color:#ff6611;
+           text-decoration: solid;
+       }
+       nav ul li a:active{
+           background-color: white;
+       }
+       nav img{
+          position: fixed;
+          left: 4%;
+          top: 2%;
+           height: 40px;
+           width: 200px;
+       }
+       .main1{
+           position: absolute;
+           left: 30%;
+           top: 15%;
+           height: 400px;
+           width: 100px;
+           border-left: solid 5px darkgrey;
+       }
+       .rgit{
+           font-size: 100px;
+           position: absolute;
+           left: 100%;
+           top: 25%;
+           animation: rgit 1s forwards;
+       }
+       @keyframes rgit{
+        100%{transform: translateX(-940px);}
+       }
+
+       
+   </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <img src="logo.png">
+                <li id="li1"><a href="Home page.html">Home page</a></li>
+                <li id="li5"><a href="Committee page.html">Committees
+                <li id="li2"><a href="Events page.html">Events</a></li>
+                <li id="li7"><a href="books page.html">Books</a></li>
+                <li id="li3"><a href="Question papers page.html">MU Question papers</a></li>
+                <li id="li4"><a href="Question paper page2.html">RGIT UT Question papers</a></li>
+                <li id="li6"><a href="About us.html">About us</a></li>
+                <li id="li8"><a href="Contact us.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main1"></div>
+    <h1 class="rgit">Assignments &<br><span>Manuals</span></h1>
+
+</body>
+</html>
