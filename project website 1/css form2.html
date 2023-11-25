@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Poppins', sans-serif;
+		}
+		body{
+			background-color: lightgrey;
+		}
+		
+		.right{
+			background:linear-gradient( to bottom ,forestgreen,darkgreen);
+			width: 30%;
+			height: 500px;
+			position: absolute;
+			left: 49%;
+			top: 5%;
+			padding: 50px;
+
+		}
+
+		.left{
+			width: 30%;
+			height: 500px;
+			background-color: white;
+			padding: 50px;
+			position: absolute;
+			left: 12%;
+			top: 5%;
+		}
+		h1{
+			text-align: center;
+			margin-top: 100px;
+		}
+
+		input[type=text]
+		{
+			width: 90%;
+			height: 35px;
+			margin-top: 20px;
+			margin-bottom: 15px;
+			border: none;
+			background-color: lightgrey;
+			border-radius: 4PX;
+		}
+
+		input[type=password]
+		{
+			width: 90%;
+			height: 35px;
+			margin-bottom: 15px;
+			border: none;
+			background-color: lightgrey;
+			border-radius: 4px;
+		}
+
+		input[type=button]
+		{
+			width: 90%;
+			height: 45px;
+			color: white;
+			background-color: forestgreen;
+			border: none;
+			border-radius: 4px;
+		}
+
+		h2{
+			color: white;
+			text-align: center;
+			margin-top: 150px;
+		}
+		p{
+			color: white;
+			text-align: center;
+		}
+		button{
+			width: 80%;
+			height: 40px;
+			border-radius: 50px;
+/*			background-color: darkgreen;*/
+            margin: 10px;
+           background: rgba(25,255,25,0.1);
+			border: none;
+			color: white;
+		}
+		input[type=button]:hover{
+			     background: rgba(25,500,25,0.7);
+
+		}
+
+		::placeholder{
+			padding: 20px;
+		}
+
+		.para{
+			color: black;
+			margin-top: 20px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		button:hover{
+			     background: rgba(255,255,255,0.3);
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+		<div class="left">
+			<form>
+		<h1>Sign In</h1>
+		<input type="text" placeholder="Username" name="name"><br>
+		<input type="password" placeholder="Password" name="pass"><br>
+		<input type="button" value="Signin" name="signin"><br>
+		<p class="para">or signin with</p>
+		<p>
+			<!-- <i style="font-size:24px" class="fa">&#xf082;</i> -->
+			<i class="fa fa-facebook-square" style="font-size:34px;color: #3b5998 ;"></i>
+			<i class="fa fa-google-plus-square" style="font-size:34px;color:#EA4335;"></i>
+			<i class="fa fa-linkedin" style="font-size:25px;color:white;background-color: #0072b1;padding: 3px;border-radius: 4px;position: absolute;left:57%;"></i>
+		</p>
+	        </form>
+		</div>
+		<div class="right">
+			<h2>Welcome back!</h2>
+		<p>Welcome back! We are so happy to have you here.it"s great to see you again. We hope you had a safe and enjoyable time away.</p>
+		<center><button>No account yet? Signup.</button></center>
+		</div>
+
+</body>
+</html>
